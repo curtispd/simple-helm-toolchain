@@ -1,5 +1,5 @@
 ---
-version: 2
+version: "2"
 messages:
   $i18n: locales.yml
 template:
@@ -24,14 +24,14 @@ template:
       "[" + $env.branch + "]" +
         "(" + $env.repository +
           "/tree/" + $env.branch + ")"
-toolchain:
+tttoolchain:
   name: >
     $env.toolchainName ? '{{toolchainName}}' :
       'helm-toolchain-{{timestamp}}'
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
-services:
+ssservices:
   repo:
     service_id: >
       $env.source_provider ? $env.source_provider : 'hostedgit'
