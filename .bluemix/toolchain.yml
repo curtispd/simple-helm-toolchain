@@ -1,5 +1,5 @@
 ---
-version: "2"
+version: "1"
 messages:
   $i18n: locales.yml
 template:
@@ -25,7 +25,7 @@ template:
         "(" + $env.repository +
           "/tree/" + $env.branch + ")"
 toolchain:
-  title: >
+  name: >
     $env.toolchainName ? '{{toolchainName}}' :
       'helm-toolchain-{{timestamp}}'
   template:
