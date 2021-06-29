@@ -25,7 +25,7 @@ template:
         "(" + $env.repository +
           "/tree/" + $env.branch + ")"
 toolchain:
-  name: >
+  title: >
     $env.toolchainName ? '{{toolchainName}}' :
       'helm-toolchain-{{timestamp}}'
   template:
